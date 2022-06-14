@@ -1,0 +1,33 @@
+<div class="new-registration-main-container">
+  <h2 style="margin-bottom: 1em;">Criar conta</h2>
+
+  <%= form_for(resource, as: resource_name, url: new_user_registration_path) do |f| %>
+    <%= render "devise/shared/error_messages", resource: resource %>
+
+    <div class="field">
+      <%= f.label :email %><br />
+      <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+    </div>
+
+    <div class="field">
+      <%= f.label :senha %>
+      <% if @minimum_password_length %>
+      <em>(<%= @minimum_password_length %> caracteres mínimos)</em>
+      <% end %><br />
+      <%= f.password_field :password, autocomplete: "new-password" %>
+    </div>
+
+    <div class="field">
+      <%= f.label :confirmação_da_senha %><br />
+      <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+    </div>
+
+    <div class="actions">
+      <%= f.submit "Confirmar" %>
+    </div>
+
+    <button style="border: 1px solid gray; border-radius: 3px; margin-bottom: 10px; margin-top: 10px;" class="actions">
+      <%= render "devise/shared/links" %>
+    </button>
+  <% end %>
+</div>

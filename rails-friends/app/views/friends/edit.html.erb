@@ -1,0 +1,10 @@
+<h1>Editing Friend</h1>
+<br/>
+<%= render 'form', friend: @friend %>
+
+<br/>
+<%= link_to 'Mostrar', @friend, class:"btn btn-secondary" %>
+
+<%= link_to 'Deletar', @friend, method: :delete, data: { confirm: 'Você tem certeza?' }, class: "btn btn-danger" %>
+
+<%= link_to 'Voltar', friends_path, class:"btn btn-dark" %>

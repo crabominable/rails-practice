@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+.header-main-container {
+  align-items: center;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.header-container {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  max-width: 60em;
+  padding: 0 2em;
+  width: 100%;
+}
+
+.header-container-item-content {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 18em;
+}
+
+.header-container-content {
+  font-family: 'Nunito', sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  letter-spacing: 0.8px;
+  cursor: auto;
+}
+
+.header-container-item-2-content {
+  align-items: center;
+  display: flex;
+  font-family: 'Nunito', sans-serif;
+  letter-spacing: 0.8px;
+  font-size: 17px;
+  font-weight: bold;
+  justify-content: space-between;
+  width: 12em;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(239, 71, 35);
+  text-decoration: none;
+}
+
+.logo-image {
+  margin-bottom: 16px;
+  width: 200px;
+}
+
+.header-sign-up-button {
+  background-color: rgb(239, 71, 35);
+  border-radius: 4px;
+  color: white;
+  padding: 10px 12px 8px 12px;
+}
+
+.header-sign-up-button:hover {
+  background-color: rgb(197, 58, 27);
+  cursor: pointer;
+}
+
+.header-sign-up-button a {
+  color: white;
+}
